@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.4;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    overflow-y: hidden;
+  }
+  
+  body {
+    min-height: 100vh;
+    width: 100%;
+  }
+
+main {
+    margin-left: 20px;
+    width: 100%;
+}
+
+nav {
+    width: 250px;
+    border-right: 1px solid black;
+    min-height: 100%;
+    padding: 10px;
+}
+
+nav h1 {
+    text-align: center;
+}
+
+
+.container {
+    display: flex;
+}
+
+
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    padding: 10px;
+}
+
+button {
+    padding: 3px;
+    margin-top: 3px;
+}
+
+input[type="text"] {
+    padding: 3px;
+}
+
+.js-edit, .js-delete {
+    background: none;
+    border: 0;
+    font-size: 16px;
+}
+
+.js-edit:hover, .js-delete:hover {
+    cursor: pointer;
+}
+
+
+.right-side {
+    display: flex;
+    align-items: center;
+}
+
+.star {
+    cursor: pointer;
+    color: red;
+    background: none;
+    outline: none;
+    border: 0;
+    font-size: 18px;
+}
+
+button > i, i {
+    pointer-events: none;
+}
+
+.left-side {
+    display: flex;
+    align-items: center;
+}
+.todo-list {
+    list-style-type: none;
+    width: 100%;
+}
+
+.todo-item, .total-todo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input[type="checkbox"] {
+    display: none;
+  }
+  
+
+.tick {
+    width: 23px;
+    height: 23px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .tick::before {
+    content: '✓';
+    font-size: 15px;
+    font-weight: 700;
+    display: none;
+  }
+  
+  .done .tick::before {
+    display: inline;
+  }
+
+  .done span {
+      text-decoration: line-through;
+  }
+
+  #projects-nav li:hover {
+      cursor: pointer;
+  }
+
+  #default-nav li:hover {
+      cursor: pointer;
+  }
+
+  .projects {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 100%;
+  }
